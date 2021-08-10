@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>login - Demo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="/codeswage-demo/src/assets/mathu-fellows-logo_final.png" alt="mathu-fellows-logo_final">
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input placeholder="UserName" ></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input placeholder="PassWord" type="password"></ion-input>
+      </ion-item>
+      <br>
+
+      <ion-button (click)="logMeIn()">
+        login
+      </ion-button>
+      
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
