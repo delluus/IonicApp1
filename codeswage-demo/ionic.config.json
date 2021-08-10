@@ -1,0 +1,7 @@
+{
+  "name": "codeswage-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
