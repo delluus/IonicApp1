@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router ) { }
+  constructor(
+    private router: Router,
+    public modalCtrl: ModalController,
+    ) { }
 
   ngOnInit() {
   }
@@ -17,6 +21,10 @@ export class LoginPage implements OnInit {
     console.log("logMeIn function used")
     // code for loggin in user goes here
     this.router.navigate(['/home'])
+  }
+
+  dismiss() {
+    this.router.navigate(['../']);
   }
 
 }
